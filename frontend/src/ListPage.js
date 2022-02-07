@@ -2,7 +2,7 @@ import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
-import logo from "./assets/images/logo.png";
+import logo from "./assets/images/logov2.svg";
 import axios from "axios";
 
 import {
@@ -93,18 +93,7 @@ export default function PropertyListPage() {
           }}
         >
           <Box sx={{ display: "flex", alignItems: "center" }}>
-            <img src={logo} style={{ width: 60, height: 60 }} />
-            <span
-              style={{
-                marginLeft: 20,
-                fontSize: 16,
-                color: "#FFF",
-                fontWeight: "bold",
-              }}
-              margin="dense"
-            >
-              {`HODEFY. ${list.length}`}
-            </span>
+            <img src={logo} style={{ width: "auto", height: 40 }} />
           </Box>
         </Box>
         <Box

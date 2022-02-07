@@ -8,7 +8,7 @@ import { Button, Input, Modal, TextField, Typography } from "@mui/material";
 import { useMoralis } from "react-moralis";
 import LoadingButton from "@mui/lab/LoadingButton";
 
-import logo from "./assets/images/logo.png";
+import logo from "./assets/images/logov2.svg";
 import rocket from "./assets/images/rocket.png";
 import axios from "axios";
 
@@ -98,8 +98,8 @@ export default function Home() {
           }}
         >
           <Box sx={{ display: "flex", alignItems: "center" }}>
-            <img src={logo} style={{ width: 60, height: 60 }} />
-            <span
+            <img src={logo} style={{ width: "auto", height: 40 }} />
+            {/* <span
               style={{
                 marginLeft: 20,
                 fontSize: 16,
@@ -109,7 +109,7 @@ export default function Home() {
               margin="dense"
             >
               HODEFY.
-            </span>
+            </span> */}
           </Box>
           {/* <Box sx={{ width: "30%" }}>
               <TextField
@@ -199,7 +199,24 @@ export default function Home() {
               mt: 10,
             }}
           >
-            <img src={rocket} style={{ width: 600, height: "auto" }} />
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "flex-start",
+                alignContent: "flex-start",
+                marginLeft: -20,
+              }}
+            >
+              <img
+                src={
+                  "https://cdn.discordapp.com/attachments/937822539860803586/940049963184963655/image1.png"
+                }
+                style={{
+                  width: 800,
+                  height: "auto",
+                }}
+              />
+            </Box>
           </Box>
         </Box>
       </Container>
