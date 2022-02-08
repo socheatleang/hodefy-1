@@ -10,6 +10,7 @@ import LoadingButton from "@mui/lab/LoadingButton";
 
 import logo from "./assets/images/logov2.svg";
 import rocket from "./assets/images/rocket.png";
+import {BASE_URL} from './constants';
 import axios from "axios";
 
 export default function Home() {
@@ -67,7 +68,7 @@ export default function Home() {
     setIsRequestion(true);
     axios({
       method: "post",
-      url: "http://localhost:4000/properties",
+      url: `${BASE_URL}/properties`,
       data: bodyFormData,
       headers: { "Content-Type": "multipart/form-data" },
     })
