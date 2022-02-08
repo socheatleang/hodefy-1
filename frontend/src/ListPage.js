@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import logo from "./assets/images/logov2.svg";
 import axios from "axios";
+import { BASE_URL } from "./constants";
 
 import {
   Divider,
@@ -65,7 +66,7 @@ export default function PropertyListPage() {
   const [list, setList] = React.useState([]);
   React.useEffect(() => {
     axios
-      .get("http://localhost:4000/properties")
+      .get(`${BASE_URL}/properties`)
       .then(function (response) {
         // handle success
         setList(response.data.reverse());
