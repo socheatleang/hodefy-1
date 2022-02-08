@@ -1,1 +1,0 @@
-export const BASE_URL = 'https://morning-ridge-30481.herokuapp.com';
